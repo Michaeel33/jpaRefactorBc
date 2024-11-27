@@ -14,6 +14,7 @@ public class PersonalDataEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "perid", nullable = false, unique = true)
     private Long perId;
 
     @Column(name = "firstname")
